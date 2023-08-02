@@ -1,0 +1,372 @@
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.bg-home{
+    position: relative;
+    
+    
+}
+
+.bg-home::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgb(62,62,82,0.1), #9f9fd1), url("../assets/bg.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    
+}
+
+.hero{
+    color: $white-normal;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 38px;
+    }
+
+    p{
+        text-align: center;
+        margin: 14px 0;
+    }
+}
+
+    .button-contact{
+        padding: 14px 28px;
+        color: $white-normal;
+        background-color: $red-normal;
+        border: 0;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 14px 0;
+    }
+
+    .button-contact:hover{
+        animation: scaleButton 0.8s alternate infinite;
+    }
+
+    @keyframes scaleButton{
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.07);
+        }
+    }
+
+    @media screen and (max-width:768px){
+        .hero{
+            min-height: 60vh;
+
+            h1{
+                font-size: 34px;
+                padding: 0 14px;
+                width: 100%;
+            }
+
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .about{
+        color: $white-normal;
+        background-color: #9f9fd1;
+    }
+
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding: 34px 14px 64px 14px;
+        img{
+            max-width: 570px;
+        }
+    }
+
+    .about-content div{
+        flex: 1;
+    }
+
+.about-description{
+    h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+
+    p{
+        margin-bottom: 14px;
+        line-height: 150%;
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-content{
+        flex-direction: column;
+    }
+}
+
+.image-lu{
+    border-radius: 50%;
+    border: solid 6px #90EE90;
+}
+
+#img > img {
+    width: 30px;
+    margin-top: 120px;
+    animation: jumping 1s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes jumping {
+    from {transform: translateY(-15px);}
+    50% {transform: translateY(0);}
+    to {transform: translateY(-15px);}
+}
+
+.services{
+    background-color: $white-normal;
+    color: $black-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+    margin-top: 32px;
+}
+
+.services-content p{
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+}
+
+.itens{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 35px;
+    gap: 18px;
+    padding: 0 44px 34px 44px;
+}
+
+.ositens{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 590px;
+    width: 400px;
+    background-color: $white-normal;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0,0,0, 0.5);
+
+    overflow: hidden;
+
+}
+
+.ositens img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.mine-services-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: $white-normal;
+    z-index: 99;
+}
+
+
+.mine-services-info button{
+    color: $white-normal;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+
+    cursor: default;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: $white-normal;
+    background-color: #9f9fd1;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 8px;
+    
+}
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+
+    img{
+    max-width: 74px;
+    transition: transform 0.4s;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
+}
+
+.btn-whatsapp .textowhats{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 4px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: $primary-dark;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+}
+
+.btn-whatsapp:hover .textowhats{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+    .btn-whatsapp{
+        img{
+            max-width: 54px;
+        }
+    }
+}
+
+.título-serviços{
+    color: $black-normal;
+    font-size: 20px;
+    text-align: center;
+   
+
+}
+.serviços-descrição{
+    line-height: 150%;
+    text-align: center;
+    max-width: 780px;
+    margin-top: 12px;
+}
+
+.icone{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.icone2{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 110px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.icone3{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 115px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.divbotao2{
+    display: flex;
+    margin-top: 30px;
+    justify-content: right;
+}
+
+.botao-item{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 120px;
+    margin-top: 30px;
+}
+
+.botao1{
+    background-color: #9f9fd1;
+}
+
+.botao2{
+    background-color: #90EE90;
+}
+
+.botao-item1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 120px;
+    margin-top: 55px;
+}
+
+.embreve {
+    line-height: 150%;
+    text-align: center;
+    max-width: 780px;
+    margin-top: 40px;
+    color: red
+}
+
+.temp-block{
+    margin-top: 60px;
+    color: red
+    ;
+
+}
