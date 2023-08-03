@@ -101,6 +101,11 @@ i {
   background-repeat: no-repeat;
 }
 
+.logo-white {
+  width: 166px;
+  height: 195px;
+}
+
 .hero {
   color: #fff;
   min-height: 80vh;
@@ -394,7 +399,7 @@ i {
   flex-direction: row;
   justify-content: space-around;
   gap: 120px;
-  margin-top: 30px;
+  margin-top: 75px;
 }
 
 .botao1 {
@@ -411,7 +416,7 @@ i {
   flex-direction: row;
   justify-content: space-around;
   gap: 120px;
-  margin-top: 55px;
+  margin-top: 100px;
 }
 
 .embreve {

@@ -25,6 +25,11 @@
     
 }
 
+.logo-white{
+    width: 166px;
+    height: 195px;
+}
+
 .hero{
     color: $white-normal;
     min-height: 80vh;
@@ -336,7 +341,7 @@
     flex-direction: row;
     justify-content: space-around;
     gap: 120px;
-    margin-top: 30px;
+    margin-top: 75px;
 }
 
 .botao1{
@@ -345,6 +350,7 @@
 
 .botao2{
     background-color: #90EE90;
+    
 }
 
 .botao-item1{
@@ -353,7 +359,7 @@
     flex-direction: row;
     justify-content: space-around;
     gap: 120px;
-    margin-top: 55px;
+    margin-top: 100px;
 }
 
 .embreve {
@@ -366,7 +372,5 @@
 
 .temp-block{
     margin-top: 60px;
-    color: red
-    ;
-
+    color: red;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -33,18 +34,19 @@
                         <i class="fa-brands fa-tiktok fa-2x"></i>
                     </a>
                 </div>
-                <div class="header-logo" data-aos="fade-up">
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="400">
                     <img
+                    data-aos="flip-up" data-aos-delay="400" data-aos-duration="1500"
                     src="assets/logo.png"
                     alt="Logo da Lu"
                     />
                 </div>
-                <div>
+                <div data-aos="fade-down">
                     <a class="header-button" 
                     href="https://api.whatsapp.com/send?phone=5541998722033&text=Quero%20conhecer%20mais%20sobre%20a%20sua%20consultoria!" target="_blank">Agendar horário</a>
                 </div>
             </nav>
-    <main class="hero container">
+    <main class="hero container" data-aos="fade-up" data-aos-delay="400">
         <h1>A MUDANÇA COMEÇA AGORA.</h1>
         <div id="img">
             <img src="assets/down-arrow.svg" alt="">
@@ -55,13 +57,15 @@
 
    <section class="about">
     <div class="container about-content">
-        <div>
+        <div data-aos="zoom-in" data-aos-delay="100">
             <img 
             class="image-lu" src="assets/images.png" 
             alt="Imagem sobre mim">
         </div>
 
-        <div class="about-description">
+        <div 
+        data-aos="zoom-out-left" data-aos-delay="250"
+        class="about-description">
             <h2>Sobre</h2>
             <p>Faço consultoria de inovação e marketing para ajudar empresas a crescerem de forma criativa e eficiente. Utilizando conhecimentos em marketing, análise de mercado e tendências, proporciono insights e recomendações práticas para melhorar a visibilidade da marca, alcançar novos mercados e obter resultados impactantes no cenário empresarial em constante evolução.</p>
         </div>
@@ -78,7 +82,7 @@
     </div>
     <section class="itens">
         <div class="ositens">
-        <div class="mine-services-info">
+        <div class="mine-services-info" data-aos="fade-up" data-aos-delay="150">
             <h1 class="título-serviços">QUIZ PROBLEMA E SOLUÇÃO</h1>
             <div class="icone">
                 <i class="fa-solid fa-check-to-slot fa-10x" style="color: #90EE90"></i>
@@ -90,7 +94,7 @@
         </div>
     </div>
     <div class="ositens">
-        <div class="mine-services-info">
+        <div class="mine-services-info" data-aos="fade-up" data-aos-delay="250">
             <h2 class="título-serviços">CONSULTORIA 3 PASSOS</h2>
             <div class="icone2">
                 <i class="fa-solid fa-bars fa-10x" style="color: #90EE90"></i>
@@ -111,7 +115,7 @@
         </div>
     </div>
     <div class="ositens">
-        <div class="mine-services-info">
+        <div class="mine-services-info" data-aos="fade-up" data-aos-delay="400">
            <h3 class="título-serviços">PLANO MENSAL</h3>
            <div class="icone3">
             <i class="fa-regular fa-calendar-check fa-10x" style="color: #90EE90;"></i>
@@ -137,7 +141,7 @@
             <i class="fa-brands fa-instagram fa-2x"></i>
         </a>
         <a href="#">
-            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-linkedin fa-2x"></i>
         </a>
         <a href="#">
             <i class="fa-brands fa-tiktok fa-2x"></i>
@@ -150,7 +154,7 @@
     </div>
     
     
-    <p>Copyright 2023 | Virmond Consultoria - Todos os direitos reservados.</p>
+    <p>Copyright 2023 | Virmond Consultoria </p>
 
 
 
@@ -160,11 +164,14 @@
 href="https://api.whatsapp.com/send?phone=5541998722033&text=Quero%20conhecer%20mais%20sobre%20a%20sua%20consultoria!"
 class="btn-whatsapp"
 target="_blank"
+data-aos="zoom-in-up" data-aos-delay="400"
 >
     <img src="assets/whatssapp.svg" alt="Botão whatssapp">
-    <span class="textowhats">Agende seu horário</span>
 </a>
 
-<script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
